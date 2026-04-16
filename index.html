@@ -4,128 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OLE'S TECH HUB</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1 class="logo"> 
-             <img src="Modern tech logo with glowing laptop.png" alt="OLE'S TECH HUB Logo">
-</div>
+<header id="home" class="container-fluid">
+
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/logo.png" alt="OLE'S TECH HUB Logo">
+        </div>
+
+        <!-- Search -->
+        <div class="search-container flex-grow-1 mx-3">
+            <input type="text" id="searchInput" placeholder="Search products..." />
+            <button onclick="searchSite()">Search</button>
+        </div>
+
+        <!-- Nav -->
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav flex-wrap justify-content-center">
+                <li class="nav-item"><a class="nav-link text-light" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Latest Technology at Your Fingertips</h2>
-        <p>Shop the newest smartphones, laptops, and tech accessories all in one place.</p>
-        <a href="#products" class="hero-button">Shop Now</a>
-    </section>
+    </div>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <h2>Our Products</h2>
+</header>
 
-        <div class="product-grid">
+<!-- Hero -->
+<section class="hero text-center">
+    <h2>Latest Technology at Your Fingertips</h2>
+    <p>Shop the newest smartphones, laptops, and tech accessories all in one place.</p>
+    <a href="#products" class="hero-button">Shop Now</a>
+</section>
 
-            <div class="card">
-                <img src="https://www.mobiledokan.com/media/apple-iphone-16-ultramarine-official-image.webp">
-                <h3>iPhone 16</h3>
-                <p>P18,999</p>
-                <button>Add to Cart</button>
-            </div>
+<!-- Products -->
+<section id="products" class="products container">
 
-            <div class="card">
-                <img src="https://5.imimg.com/data5/IJ/RP/MY-42341821/apple-macbookpro-500x500.jpg">
-                <h3>MacBook Pro</h3>
-                <p>P25,000</p>
-                <button>Add to Cart</button>
-            </div>
+    <h2 class="text-center">Our Products</h2>
 
-            <div class="card">
-                <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/he0/h37/11004045918238/silo-product-image-v2-03Nov2022-180146-6009545403806-Straight_on-70128-3619_400Wx400H">
-                <h3>Wireless Headphones</h3>
-                <p>P899</p>
-                <button>Add to Cart</button>
-            </div>
+    <div class="row g-3">
 
-            <div class="card">
-                <img src="https://5.imimg.com/data5/DF/AR/MY-28053121/digital-t-mobile-watch-phone-500x500.jpg">
-                <h3>Smart Watch</h3>
-                <p>P1,200</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="card">
-                <img src="https://media.takealot.com/covers_images/e68c5ccdefc74576a70eb55494b8089e/s-zoom.file">
-                <h3>Keyboard & Mouse Combo</h3>
-                <p>P450</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="card">
-                <img src="https://intelligence.ma/165-large_default/lenovo-essential-compact-wireless-mouse.jpg">
-                <h3>Wireless Mouse</h3>
-                <p>P250</p>
-                <button>Add to Cart</button>
-            </div>
-
-            <div class="card">
-                <img src="https://www.calitta.com/13098-thickbox_default/notebook-backpack-with-free-shipping.jpg">
-                <h3>Laptop Backpack</h3>
-                <p>P350</p>
-                <button>Add to Cart</button>
-            </div>
-
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://www.mobiledokan.com/media/apple-iphone-16-ultramarine-official-image.webp">
+            <h3>iPhone 16</h3>
+            <p>P18,999</p>
+            <button>Add to Cart</button>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            OLE'S TECH HUB is an online technology store providing modern, reliable and affordable tech products. As a leading store in Botswana we take pride in providing a diverse range of top quality tech products to meet all your needs we have got you covered.
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://5.imimg.com/data5/IJ/RP/MY-42341821/apple-macbookpro-500x500.jpg">
+            <h3>MacBook Pro</h3>
+            <p>P25,000</p>
+            <button>Add to Cart</button>
+        </div>
 
-            We are committed to delivering a user friendly interface that ensures effortless navigation and a hassle free shopping journey.
-        </p>
-    </section>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/he0/h37/11004045918238/silo-product-image-v2-03Nov2022-180146-6009545403806-Straight_on-70128-3619_400Wx400H">
+            <h3>Wireless Headphones</h3>
+            <p>P899</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@olestechhub.com | Phone: +267 123 4567</p>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://5.imimg.com/data5/DF/AR/MY-28053121/digital-t-mobile-watch-phone-500x500.jpg">
+            <h3>Smart Watch</h3>
+            <p>P1,200</p>
+            <button>Add to Cart</button>
+        </div>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://media.takealot.com/covers_images/e68c5ccdefc74576a70eb55494b8089e/s-zoom.file">
+            <h3>Keyboard & Mouse Combo</h3>
+            <p>P450</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 OLE'S TECH HUB. All rights reserved.</p>
-    </footer>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://intelligence.ma/165-large_default/lenovo-essential-compact-wireless-mouse.jpg">
+            <h3>Wireless Mouse</h3>
+            <p>P250</p>
+            <button>Add to Cart</button>
+        </div>
 
-    <!-- Simple Cart Script -->
-    <script>
-        const buttons = document.querySelectorAll(".card button");
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 card searchable">
+            <img src="https://www.calitta.com/13098-thickbox_default/notebook-backpack-with-free-shipping.jpg">
+            <h3>Laptop Backpack</h3>
+            <p>P350</p>
+            <button>Add to Cart</button>
+        </div>
 
-        buttons.forEach(button => {
-            button.addEventListener("click", () => {
-                alert("Product added to cart!");
-            });
-        });
-    </script>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container">
+    <h2>About Us</h2>
+
+    <p>OLE'S TECH HUB is a modern technology store dedicated to making quality devices and support accessible.</p>
+
+    <h3>🎯 Our Mission</h3>
+    <p>Provide affordable, high-quality technology products.</p>
+
+    <h3>🌍 Our Vision</h3>
+    <p>Be the go-to destination for tech lovers.</p>
+</section>
+
+<!-- Services -->
+<section id="services" class="container">
+    <h2>Our Services</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-4 service-card">
+            <h3>🔧 Repairs</h3>
+            <p>Screen, battery, software fixes.</p>
+        </div>
+
+        <div class="col-md-4 service-card">
+            <h3>💻 Sales</h3>
+            <p>Phones, laptops, accessories.</p>
+        </div>
+
+        <div class="col-md-4 service-card">
+            <h3>🛠️ Support</h3>
+            <p>Technical help anytime.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" class="form-control mb-2">
+        <input type="email" placeholder="Your Email" class="form-control mb-2">
+        <textarea placeholder="Your Message" class="form-control mb-2"></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+
+    <p>© 2026 OLE'S TECH HUB</p>
+
+</footer>
+
+<!-- Scripts -->
+<script>
+function searchSite() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let items = document.querySelectorAll(".searchable");
+
+    items.forEach(item => {
+        item.style.display = item.innerText.toLowerCase().includes(input)
+            ? ""
+            : "none";
+    });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
