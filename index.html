@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLE'S TECH HUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="OLE'S TECH HUB Logo">
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <button onclick="searchSite()">Search</button>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Latest Technology at Your Fingertips</h2>
+    <p>Shop the newest smartphones, laptops, and tech accessories all in one place.</p>
+    <a href="products.html" class="hero-button">Shop Now</a>
+
+</section>
+
+<section class="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Laptop -->
+        <div class="card">
+            <img src="https://5.imimg.com/data5/IJ/RP/MY-42341821/apple-macbookpro-500x500.jpg">
+            <h3>MacBook Pro</h3>
+            <p>P25,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Headphones -->
+        <div class="card">
+            <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/he0/h37/11004045918238/silo-product-image-v2-03Nov2022-180146-6009545403806-Straight_on-70128-3619_400Wx400H">
+            <h3>Wireless Headphones</h3>
+            <p>P899</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Smartwatch -->
+        <div class="card">
+            <img src="https://5.imimg.com/data5/DF/AR/MY-28053121/digital-t-mobile-watch-phone-500x500.jpg">
+            <h3>Smart Watch</h3>
+            <p>P1,200</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="footer-grid">
+
+        <div class="footer-box">
+            <h2 class="footer-logo">OLE'S TECH HUB</h2>
+            <p>
+                Your trusted tech store for devices, repairs, and technical support.
+                Quality products and reliable service you can count on.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Delivery</h3>
+            <p>Fast nationwide delivery across Botswana within 24–72 hours.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Payments</h3>
+            <ul>
+                <li>Card Payments</li>
+                <li>Mobile Money</li>
+                <li>Cash on Delivery</li>
+                <li>Bank Transfer</li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Store Locations</h3>
+            <p>Gaborone, Francistown</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 OLE'S TECH HUB. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+function searchSite() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let items = document.querySelectorAll(".searchable")
+
+  items.forEach(item => {
+    let text = item.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

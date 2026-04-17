@@ -1,0 +1,335 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #020617, #0f172a);
+    color: #e5e7eb;
+}
+
+/* Header */
+header {
+    background-color: #020617;
+    padding: 15px 30px;
+    border-bottom: 2px solid #0ea5e9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    width: 190px;
+    filter: drop-shadow(0 0 5px rgba(14,165,233,0.6));
+}
+
+/* Navbar */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0ea5e9;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #020617, #1e293b);
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #cbd5f5;
+}
+
+.hero-button {
+    background-color: #0ea5e9;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+/* Products */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #3566b4;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(14,165,233,0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #f97316;
+    font-weight: bold;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0ea5e9;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+/* Services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border: 1px solid #334155;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #334155;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0ea5e9;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 1px solid #334155;
+}
+
+.footer-box p {
+    margin: 5px 0;
+    color: #cbd5f5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+}
+
+/* About section text */
+#about h3 {
+    color: #0ea5e9;
+    margin-top: 20px;
+}
+
+#about p {
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+/* Search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20x auto;
+    max-width: 50px;
+    width: 95%;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 7px 5px 0;
+}
+
+.search-container button:hover {
+    background: #0056b3;
+}
+
+/* Mobile responsiveness (fixed broken braces) */
+@media (max-width: 600px) {
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container input,
+    .search-container button {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .search-container button {
+        margin-top: 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* ===== FIX PRODUCT SIZE (ADD AT BOTTOM) ===== */
+
+.products {
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    max-width: 200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="OLE'S TECH HUB Logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search products..." />
+  <button onclick="searchSite()">Search</button>
+</div>
+
+<section class="products">
+    <h2>Our Products</h2>
+
+    <!-- SMARTPHONES -->
+    <h3 id="smartphones">Smartphones</h3>
+    <div class="product-grid">
+        <div class="card searchable">
+            <img src="https://www.mobiledokan.com/media/apple-iphone-16-ultramarine-official-image.webp">
+            <h3>iPhone 16</h3>
+            <p>P18,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://i.pinimg.com/736x/9b/eb/c9/9bebc9f406051f84b7cefbf0fbdbd1fa.jpg">
+            <h3>iphone 15 pro</h3>
+            <p>P10,000</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- LAPTOPS -->
+    <h3 id="laptops">Laptops</h3>
+    <div class="product-grid">
+        <div class="card searchable">
+            <img src="https://5.imimg.com/data5/IJ/RP/MY-42341821/apple-macbookpro-500x500.jpg">
+            <h3>MacBook Pro</h3>
+            <p>P25,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://p1-ofp.static.pub/fes/cms/2023/02/13/5tlm0hunv3l71hzse5hlxsafgw4aw0954514.png">
+            <h3>lenovo_thinkpad_corei5</h3>
+            <p>P12,999</p>
+            <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- ACCESSORIES -->
+    <h3 id="accessories">Accessories</h3>
+    <div class="product-grid">
+
+        <div class="card searchable">
+            <img src="https://media.takealot.com/covers_images/e68c5ccdefc74576a70eb55494b8089e/s-zoom.file">
+            <h3>Keyboard & Mouse Combo</h3>
+            <p>P450</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://cdn-prd-02.pnp.co.za/sys-master/images/he0/h37/11004045918238/silo-product-image-v2-03Nov2022-180146-6009545403806-Straight_on-70128-3619_400Wx400H">
+            <h3>Wireless Headphones</h3>
+            <p>P899</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://intelligence.ma/165-large_default/lenovo-essential-compact-wireless-mouse.jpg">
+            <h3>Wireless Mouse</h3>
+            <p>P250</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://www.calitta.com/13098-thickbox_default/notebook-backpack-with-free-shipping.jpg">
+            <h3>Laptop Backpack</h3>
+            <p>P350</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- WEARABLES -->
+    <h3 id="wearables">Wearables</h3>
+    <div class="product-grid">
+        <div class="card searchable">
+            <img src="https://5.imimg.com/data5/DF/AR/MY-28053121/digital-t-mobile-watch-phone-500x500.jpg">
+            <h3>Smart Watch</h3>
+            <p>P1,200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card searchable">
+            <img src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/08/samsung-galaxy-watch-6-classic-silver.png?q=70&fit=contain&w=420&dpr=1">
+            <h3>samsung-galaxy-watch-6-classic-silver</h3>
+            <p>P999</p>
+            <button>Add to Cart</button>
+        </div>
+
+            <div class="card searchable">
+                            <img scr="https://cdn.shopify.com/s/files/1/0751/1503/articles/HUAWEI_watch_fit_blog_image.png?v=1612515183">
+                <h3>watch-fit-special-edition</h3>
+                <p>P875</p>
+                <button>Add to Cart</button>
+            </div>
+        
+    </div>
+
+</section>
+
+<script>
+function searchSite() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let items = document.querySelectorAll(".card");
+
+  items.forEach(item => {
+    let text = item.innerText.toLowerCase();
+
+    if (text.includes(input)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
